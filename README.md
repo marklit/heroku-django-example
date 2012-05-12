@@ -1,8 +1,8 @@
-= Django + Heroku + Bootstrap Example =
+# Django + Heroku + Bootstrap Example
 
 This is a small example of a [Django](https://www.djangoproject.com/) app which uses Twitter's [bootstrap](http://twitter.github.com/bootstrap/) for it's front end templates and runs on [Heroku](http://www.heroku.com/).
 
-== Command cheat sheet ==
+## Command cheat sheet
 
 Setting up the git repo:
 
