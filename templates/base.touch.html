@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>{% block title %}Django + Heroku + Bootstrap Example{% endblock %}</title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+        <style>
+            .text-align-center { text-align: center }
+            .text-align-right { text-align: right }
+        </style>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <div data-role="page" id="page1">
+            <div data-theme="a" data-role="header">
+                <h3>
+                    {% block heading %}Our Website{% endblock %}
+                </h3>
+            </div>
+            <div data-role="content">
+                {% block body %}{% endblock %}
+            </div>
+            <div data-theme="a" data-role="footer">
+                <h3>
+                    &copy; Company 2012
+                </h3>
+            </div>
+        </div>
+        <script>
+            //App custom javascript
+        </script>
+    </body>
+</html>

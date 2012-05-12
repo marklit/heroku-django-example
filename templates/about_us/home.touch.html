@@ -1,0 +1,27 @@
+{% extends "base.touch.html" %}
+
+{% block body %}
+    <h2>
+        About Us
+    </h2>
+    <ul data-role="listview" data-divider-theme="b" data-inset="true">
+        <li data-role="list-divider" role="heading">
+            Our people
+        </li>
+        {% if people_list %}
+            {% for person in people_list %}
+                <li data-theme="a">
+                    <a data-transition="slide">
+                        {{ person.first_name }} {{ person.last_name }}
+                    </a>
+                </li>
+            {% endfor %}
+        {% else %}
+            <li data-theme="a">
+                <a data-transition="slide">
+                    There aren't any people in the system currently
+                </a>
+            </li>
+        {% endif %}
+    </ul>
+{% endblock %}

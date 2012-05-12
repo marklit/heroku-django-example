@@ -1,6 +1,7 @@
-from datetime import date, timedelta
-from celery.task import Task, PeriodicTask
 from about_us.models import Person
+from celery.task import Task, PeriodicTask
+from datetime import date, timedelta
+from time import sleep
 
 
 class CheckPersonTask(Task):
@@ -9,6 +10,8 @@ class CheckPersonTask(Task):
     """
     def run(self, person_id, **kwargs):
         logger = self.get_logger(**kwargs)
+        logger.info("Got the call for person %s, will sleep for 15 seconds first..." % person_id)
+        sleep(15)
         logger.info("Running checking task for person %s" % person_id)
         return True
 
