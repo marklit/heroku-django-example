@@ -43,3 +43,8 @@ Setting up Heroku:
     [branch "master"]
     	remote = origin
     	merge = refs/heads/master
+
+Celery processor:
+
+    $ foreman start
+    $ heroku ps:scale celeryd=1
