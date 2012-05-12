@@ -1,6 +1,8 @@
 = Django + Heroku + Bootstrap Example =
 
-== Command cheatsheet ==
+This is a small example of a [Django](https://www.djangoproject.com/) app which uses Twitter's [bootstrap](http://twitter.github.com/bootstrap/) for it's front end templates and runs on [Heroku](http://www.heroku.com/).
+
+== Command cheat sheet ==
 
 Setting up the git repo:
 
@@ -24,3 +26,20 @@ Setting up Heroku:
 
     $ heroku run python manage.py syncdb
     $ heroku run python manage.py loaddata people
+
+`.git/config` contents:
+
+    [core]
+    	repositoryformatversion = 0
+    	filemode = true
+    	bare = false
+    	logallrefupdates = true
+    [remote "heroku"]
+    	url = git@heroku.com:falling-ice-3499.git
+    	fetch = +refs/heads/*:refs/remotes/heroku/*
+    [remote "origin"]
+    	url = git@github.com:marklit/heroku-django-example.git
+    	fetch = +refs/heads/*:refs/remotes/origin/*
+    [branch "master"]
+    	remote = origin
+    	merge = refs/heads/master
