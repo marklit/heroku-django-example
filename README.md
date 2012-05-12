@@ -17,6 +17,14 @@ Load DB and fixtures:
     $ python manage.py syncdb
     $ python manage.py loaddata people
 
+Creating admin users:
+
+    $ heroku run python manage.py shell
+    ...
+    >>> from django.contrib.auth.models import User
+    >>> admin_user = User.objects.create_superuser('mark', 'admin@test.co', 'pass')
+    >>> admin_user.save()
+
 Pushing to github and heroku:
 
     $ git push -u origin master
