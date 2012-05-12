@@ -4,7 +4,7 @@ import urlparse
 
 SETTINGS_DIR = os.path.abspath( os.path.dirname( __file__ ) )
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
@@ -107,14 +107,13 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.admin',
     'gunicorn',
+    'kombu.transport.django',
+    'djcelery',
     'about_us'
 )
 
-# A sample logging configuration. The only tangible logging
-# performed by this configuration is to send an email to
-# the site admins on every HTTP 500 error when DEBUG=False.
-# See http://docs.djangoproject.com/en/dev/topics/logging for
-# more details on how to customize your logging configuration.
+BROKER_BACKEND = 'django'
+
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
