@@ -1,0 +1,1 @@
+[{"pk": 1, "model": "about_us.role", "fields": {"role_name": "Python Developer", "is_published": true}}, {"pk": 2, "model": "about_us.person", "fields": {"first_name": "John", "last_name": "Smith", "roles": [1], "is_published": true}}, {"pk": 1, "model": "about_us.person", "fields": {"first_name": "Mark", "last_name": "Litwintschik", "roles": [1], "is_published": true}}]
