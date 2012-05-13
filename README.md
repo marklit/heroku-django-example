@@ -34,11 +34,11 @@ Setting up Heroku:
 
     $ heroku run python manage.py syncdb
     $ heroku run python manage.py loaddata people
-
+    
 `.git/config` contents:
 
     [core]
-    	repositoryformatversion = 0
+        repositoryformatversion = 0
     	filemode = true
     	bare = false
     	logallrefupdates = true
