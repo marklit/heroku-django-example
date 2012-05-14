@@ -15,6 +15,7 @@ class CheckPersonTask(Task):
         logger.info("Running checking task for person %s" % person_id)
         return True
 
+
 class FullNameTask(PeriodicTask):
     """
     A periodic task that concatenates fields to form a person's full name.
