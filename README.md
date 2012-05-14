@@ -1,6 +1,6 @@
 # Django + Heroku + Bootstrap Example
 
-This is a small example of a [Django](https://www.djangoproject.com/) app which uses Twitter's [bootstrap](http://twitter.github.com/bootstrap/) for it's front end templates and runs on [Heroku](http://www.heroku.com/).
+This is a small example of a [Django](https://www.djangoproject.com/) app which uses Twitter's [bootstrap](http://twitter.github.com/bootstrap/) for it's front end templates and runs on [Heroku](http://www.heroku.com/). You can see a working example [here](http://falling-ice-3499.herokuapp.com/). The `https` version can be seen [here](https://falling-ice-3499.herokuapp.com/)
 
 ## Command cheat sheet
 
